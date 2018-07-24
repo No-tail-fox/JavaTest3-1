@@ -1,3 +1,4 @@
-FROM registry.saas.hand-china.com/hap-cloud/base:latest
+FROM registry.cn-hangzhou.aliyuncs.com/choerodon-tools/javabase:0.5.0
 
-RUN  echo "${MYSQL_IP}:${MYSQL_PORT}"
+ADD start.sh ./start.sh
+CMD ["./start.sh"]
